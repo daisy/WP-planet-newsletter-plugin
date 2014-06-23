@@ -42,18 +42,18 @@ class WPPlanetNewsletterPlugin {
 		}
 
 		$labels = array(
-			'name' => _x( 'DAISY Newsletters', 'daisy_newsletter' ),
-			'singular_name' => _x( 'DAISY Newsletter', 'daisy_newsletter' ),
-			'add_new' => _x( 'Add New', 'daisy_newsletter' ),
-			'add_new_item' => _x( 'Add New DAISY Newsletter', 'daisy_newsletter' ),
-			'edit_item' => _x( 'Edit DAISY Newsletter', 'daisy_newsletter' ),
-			'new_item' => _x( 'New DAISY Newsletter', 'daisy_newsletter' ),
-			'view_item' => _x( 'View DAISY Newsletter', 'daisy_newsletter' ),
-			'search_items' => _x( 'Search DAISY Newsletters', 'daisy_newsletter' ),
-			'not_found' => _x( 'No daisy newsletters found', 'daisy_newsletter' ),
-			'not_found_in_trash' => _x( 'No daisy newsletters found in Trash', 'daisy_newsletter' ),
-			'parent_item_colon' => _x( 'Parent DAISY Newsletter:', 'daisy_newsletter' ),
-			'menu_name' => _x( 'DAISY Newsletters', 'daisy_newsletter' ),
+			'name' => _x( 'Planet', 'planet' ),
+			'singular_name' => _x( 'Planet', 'planet' ),
+			'add_new' => _x( 'Add New', 'planet' ),
+			'add_new_item' => _x( 'Add New Planet', 'planet' ),
+			'edit_item' => _x( 'Edit Planet', 'planet' ),
+			'new_item' => _x( 'New Planet', 'planet' ),
+			'view_item' => _x( 'View Planet', 'planet' ),
+			'search_items' => _x( 'Search Planets', 'planet' ),
+			'not_found' => _x( 'No daisy newsletters found', 'planet' ),
+			'not_found_in_trash' => _x( 'No daisy newsletters found in Trash', 'planet' ),
+			'parent_item_colon' => _x( 'Parent Planet:', 'planet' ),
+			'menu_name' => _x( 'Planet', 'planet' ),
 		);
 		$args = array(
 			'labels' => $labels,
@@ -71,7 +71,7 @@ class WPPlanetNewsletterPlugin {
 			'rewrite' => true,
 			'capability_type' => 'post'
 		);
-		register_post_type( 'daisy_newsletter', $args );
+		register_post_type( 'planet', $args );
 
 	}
 
